@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cari Pasangan - Temukan Jodohmu</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="logo">Cari Pasangan</div>
+            <ul>
+                <li><a href="#problem">Masalah</a></li>
+                <li><a href="#solution">Solusi</a></li>
+                <li><a href="#cta">Mulai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Temukan Pasangan Sejatimu</h1>
+            <p>Bosan sendiri? Biarkan teknologi membantu Anda menemukan cinta.</p>
+        </section>
+
+        <section id="problem" class="content-section">
+            <h2>Masalahnya...</h2>
+            <p>Di dunia yang serba cepat ini, menemukan seseorang yang benar-benar cocok dengan Anda bisa terasa mustahil. Waktu yang terbatas dan lingkaran sosial yang itu-itu saja menjadi penghalang terbesar.</p>
+        </section>
+
+        <section id="solution" class="content-section alt">
+            <h2>Solusinya Adalah Mak Comblang!</h2>
+            <p>Mak Comblang adalah asisten AI pribadi Anda yang akan membantu mencarikan pasangan yang paling cocok berdasarkan kepribadian, minat, dan nilai-nilai Anda. Ucapkan selamat tinggal pada pencarian tanpa akhir!</p>
+        </section>
+
+        <section id="cta" class="content-section">
+            <h2>Siap Mencoba?</h2>
+            <p>Mulailah percakapan dengan Mak Comblang sekarang juga dan ambil langkah pertama untuk menemukan kebahagiaan Anda.</p>
+            <button id="open-chat-btn">Mulai Ngobrol</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cari Pasangan. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot-widget" class="chatbot-widget">
+        <div class="chat-header">
+            <h3>Mak Comblang</h3>
+            <button id="close-chat-btn">&times;</button>
+        </div>
+        <div id="chat-box" class="chat-box"></div>
+        <div id="thinking-animation" class="thinking-animation" style="display: none;">
+            <div class="avatar male">👨</div>
+            <div class="dots">
+                <span>.</span><span>.</span><span>.</span>
+            </div>
+            <div class="avatar female">👩</div>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Ketik pesanmu..." autocomplete="off" required />
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
